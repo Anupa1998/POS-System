@@ -64,15 +64,42 @@ const login=()=>{
 
 
 const createCustomer = () =>{
+    const customer = new Customer(
+        $('#name').val(),
+        $('#address').val(),
+        parseFloat($('#salary').val()),
+        $('#name').val()
+    );
 
+    let existData = customerArr.find(el=>el.nic===customer.nic);
+
+    if(existData){
+        alert('Customer Nic already exist!');
+        return;
+    }
+    customerArr.push(customer);
 }
 
 const findCustomer = (id) =>{
-    
+    let selectedCustomer = customerArr.find(el=>el.nic===customer.nic);
+
+    if (selectedCustomer) {
+        return selectedCustomer;
+    }
+    return null;
 }
 
 const updateCustomer = (id) =>{
-    
+    let customer = findCustomer(id);
+
+    if(customer){
+        $('#name').val(customer.name);
+        $('#address').val(customer.address);
+        $('#salary').val(customer.salary);
+        $('#nic').val(customer.nic);
+    }else{
+        alert('Customer Not Found');
+    }
 }
 
 const deleteCustomer = (id) =>{
