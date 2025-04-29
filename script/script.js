@@ -1,5 +1,6 @@
 let userArr = [];
 
+let customerArr=[];
 
 class User {
     constructor(fullName, email, password){
@@ -7,6 +8,16 @@ class User {
         this.email = email;
         this.password = password;
     }
+}
+
+
+class Customer{
+    constructor(name, address, salary,nic){
+        this.name = name;
+        this.address = address;
+        this.salary = salary;
+        this.nic = nic;
+    }   
 }
 
 // const hash = bcrypt.hashSync(password,bcrypt.genSaltSync(10));
@@ -50,6 +61,28 @@ const login=()=>{
         alert('User email not found');
     }
 }
+
+
+const createCustomer = () =>{
+
+}
+
+const findCustomer = (id) =>{
+    
+}
+
+const updateCustomer = (id) =>{
+    
+}
+
+const deleteCustomer = (id) =>{
+    
+}
+
+const getAllCustomer = () =>{
+    
+}
+
 
 // 
 
