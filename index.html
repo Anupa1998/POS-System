@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Start login process -->
+        <div class="container" id="login-context">
+            <div class="login-main-outer">
+                <h2 class="login-text">Login</h2>
+                <hr>
+
+                
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    <div class="col-12">
+                        <br>
+                        <div class="form-group">
+                            <input type="button" value="Login" onclick="login()" class="btn btn-primary" style="width: 100%!important;">
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-12">
+                        <br>
+                        <div class="form-group">
+                            <input type="button" value="Create an account" class="btn btn-outline-dark" style="width: 100%!important;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!-- End login process -->
+
+
+
+
+        <!-- Start signup process -->
+        <div class="container" id="register-context">
+            <div class="login-main-outer">
+                <h2 class="login-text">Signup</h2>
+                <hr>
+
+                <div class="row" style="margin: 0;">
+
+                    <div class="row" style="margin: 0;">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" class="form-control" id="full-name">
+    
+                            </div>
+                        </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" class="form-control" id="register-email">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="register-password">Password</label>
+                            <input type="password" class="form-control" id="register-password">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <br>
+                        <div class="form-group">
+                            <input type="button" value="Signup" class="btn btn-success" onclick="createUser()" style="width: 100%;">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <br>
+                        <div class="form-group">
+                            <input type="button" value="Already have an account" class="btn btn-outline-primary" style="width: 100%!important;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button onclick="check()">Check</button>
+        </div>
+    <!-- End signup process -->
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.2.0/bcrypt.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
